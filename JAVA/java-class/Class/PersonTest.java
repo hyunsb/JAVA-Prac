@@ -23,6 +23,7 @@ public class PersonTest {
         Object[] initArgs = {"kim"};
         Person person3 = (Person) constructor.newInstance(initArgs);
 
+        System.out.println(person2.getName());
         System.out.println(person3.getName());
     }
 }
