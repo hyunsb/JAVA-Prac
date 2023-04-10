@@ -13,6 +13,11 @@ public class MyArray {
         intArr = new int[ARRAY_SIZE];
     }
 
+    public MyArray(int size) {
+        ARRAY_SIZE = size;
+        intArr = new int[ARRAY_SIZE];
+    }
+
     public void addElement(int num){
         if (count >= ARRAY_SIZE) {
             System.out.println("not enough memory");
@@ -62,6 +67,14 @@ public class MyArray {
         StringBuilder arrInfo = new StringBuilder();
         for (int num : intArr) arrInfo.append(num).append(" ");
         return arrInfo.toString();
+    }
+
+    public int getElement(int i) {
+        return intArr[i];
+    }
+
+    public int[] getIntArr() {
+        return intArr;
     }
 }
 
