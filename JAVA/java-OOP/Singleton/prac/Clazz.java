@@ -1,5 +1,8 @@
 package Singleton.prac;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class Clazz {
     public static int field = 0;
     private volatile static Clazz uniqueInstance;
@@ -15,5 +18,6 @@ public class Clazz {
             }
         }
         return uniqueInstance;
+
     }
 }
